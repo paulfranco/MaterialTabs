@@ -1,5 +1,6 @@
  package co.paulfran.paulfranco.materialtabs.app;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -38,6 +39,8 @@ import co.paulfran.paulfranco.materialtabs.R;
         switch (view.getId()) {
 
             case R.id.btnSimpleTabs:
+                Intent i = new Intent(MainActivity.this, TextTabs.class);
+                startActivity(i);
 
                 break;
             case R.id.btnScrollableTabs:
