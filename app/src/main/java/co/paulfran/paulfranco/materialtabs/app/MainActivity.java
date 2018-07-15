@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import co.paulfran.paulfranco.materialtabs.R;
+import co.paulfran.paulfranco.materialtabs.tabs.TextTabs;
 
 
  public class MainActivity extends AppCompatActivity implements View.OnClickListener {
