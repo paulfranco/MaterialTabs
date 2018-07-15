@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import co.paulfran.paulfranco.materialtabs.R;
+import co.paulfran.paulfranco.materialtabs.tabs.IconTabs;
 import co.paulfran.paulfranco.materialtabs.tabs.TextTabs;
 
 
@@ -37,15 +38,18 @@ import co.paulfran.paulfranco.materialtabs.tabs.TextTabs;
 
     @Override
      public void onClick(View view) {
+
+        Intent i;
         switch (view.getId()) {
 
             case R.id.btnSimpleTabs:
-                Intent i = new Intent(MainActivity.this, TextTabs.class);
+                i = new Intent(MainActivity.this, TextTabs.class);
                 startActivity(i);
 
                 break;
             case R.id.btnScrollableTabs:
-
+                i = new Intent(MainActivity.this, IconTabs.class);
+                startActivity(i);
                 break;
             case R.id.btnIconTabs:
 
