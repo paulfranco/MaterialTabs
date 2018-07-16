@@ -49,6 +49,9 @@ public class TextTabs extends AppCompatActivity {
 
         // Bind tabLayout with viewPager
         tabLayout.setupWithViewPager(viewPager);
+
+        // Remove this method to only have text
+        setTabIcons();
     }
 
     private void initialize() {
@@ -88,4 +91,14 @@ public class TextTabs extends AppCompatActivity {
         fragmentList.add(fragment);
         titleList.add(title);
     }
+
+    // Remove if only want text
+    private void setTabIcons() {
+
+        tabLayout.getTabAt(0).setIcon(R.drawable.facebook);
+        tabLayout.getTabAt(1).setIcon(R.drawable.linkedin);
+        tabLayout.getTabAt(2).setIcon(R.drawable.whatsapp);
+
+    }
+
 }

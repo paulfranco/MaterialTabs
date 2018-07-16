@@ -48,10 +48,11 @@ import co.paulfran.paulfranco.materialtabs.tabs.TextTabs;
 
                 break;
             case R.id.btnScrollableTabs:
-                i = new Intent(MainActivity.this, IconTabs.class);
-                startActivity(i);
+
                 break;
             case R.id.btnIconTabs:
+                i = new Intent(MainActivity.this, IconTabs.class);
+                startActivity(i);
 
                 break;
             case R.id.btnCustomIconTabs:
