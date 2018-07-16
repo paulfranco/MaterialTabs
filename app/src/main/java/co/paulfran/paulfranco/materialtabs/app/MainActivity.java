@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import co.paulfran.paulfranco.materialtabs.R;
 import co.paulfran.paulfranco.materialtabs.tabs.IconTabs;
+import co.paulfran.paulfranco.materialtabs.tabs.ScrollTabs;
 import co.paulfran.paulfranco.materialtabs.tabs.TextTabs;
 
 
@@ -48,6 +49,8 @@ import co.paulfran.paulfranco.materialtabs.tabs.TextTabs;
 
                 break;
             case R.id.btnScrollableTabs:
+                i = new Intent(MainActivity.this, ScrollTabs.class);
+                startActivity(i);
 
                 break;
             case R.id.btnIconTabs:

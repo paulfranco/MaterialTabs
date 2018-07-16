@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".tabs.TextTabs"/>
         <activity android:name=".tabs.IconTabs"/>
+        <activity android:name=".tabs.ScrollTabs"/>
     </application>
 
 </manifest>
