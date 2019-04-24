@@ -17,19 +17,16 @@ public class CustomTabsAdapter extends FragmentPagerAdapter {
         this.fragmentList = fragmentList;
         this.titleList = titleList;
     }
-
     @Override
     // returns item at position
     public Fragment getItem(int position) {
         return fragmentList.get(position);
     }
-
     @Override
     // Returns count
     public int getCount() {
         return fragmentList.size();
     }
-
     @Nullable
     @Override
     public CharSequence getPageTitle(int position) {
